@@ -1,0 +1,9 @@
+<h1>Orders</h1>
+
+<% @orders.each do |order| %>
+  <div id="order-<%= order.id %>">
+    <h3><%= order.item_name %></h3>
+    <h3><%= order.shipped %></h3>
+    <h3><%= order.model %></h3>
+  </div>
+<% end %>

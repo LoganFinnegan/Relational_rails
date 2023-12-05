@@ -1,0 +1,10 @@
+<h1>Customer Orders</h1>
+<%= link_to "Create Order", "/customers/#{@customer.id}/orders/new", method: :get %>
+
+<% @customer_orders.each do |customer_order| %>
+  <div id="customer_order-<%= customer_order.id %>">
+    <h3><%= customer_order.item_name %></h3>
+    <h3><%= customer_order.model %></h3>
+    <h3><%= customer_order.shipped %></h3>
+  </div>
+<% end %>

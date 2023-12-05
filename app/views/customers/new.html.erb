@@ -1,0 +1,12 @@
+<%= form_with url: "/customers", method: :post do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :subscribed %>
+  <%= f.text_field :subscribed %>
+
+  <%= f.label :income %>
+  <%= f.number_field :income %>
+
+  <%= f.submit "Create Customer"%>
+<% end %>

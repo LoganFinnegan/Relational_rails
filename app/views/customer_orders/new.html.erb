@@ -1,0 +1,12 @@
+<%= form_with url: "/customers/#{@customer.id}/orders", method: :post do |f| %>
+  <%= f.label :item_name %>
+  <%= f.text_field :item_name %>
+
+  <%= f.label :shipped %>
+  <%= f.text_field :shipped %>
+
+  <%= f.label :model %>
+  <%= f.number_field :model %>
+
+  <%= f.submit "Create Order"%>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>Customers</h1>
+<%= link_to "New Customer", "/customers/new", method: :get %>
+
+<% @customers.each do |customer| %>
+  <div id="customer-<%= customer.id %>">
+    <h3><%= customer.name %></h3>
+    <p><%= customer.subscribed %></p>
+    <p><%= customer.income %></p>
+    <p><%= customer.created_at %></p>
+  </div>
+<% end %>

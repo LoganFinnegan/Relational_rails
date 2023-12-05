@@ -1,0 +1,8 @@
+<h1><%=@customer.name%></h1>
+
+<%= link_to "#{@customer.name}'s Orders", "/customers/#{@customer.id}/orders", method: :get %>
+<%= link_to "Update #{@customer.name}", "/customers/#{@customer.id}/edit", method: :get %>
+<p>Order Count: <%=@customer.order_count%></p>
+
+<p><%=@customer.subscribed%></p>
+<p><%=@customer.income%></p>

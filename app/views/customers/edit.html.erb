@@ -1,0 +1,12 @@
+<%= form_with url: "/customers/#{@customer.id}", method: :patch do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :subscribed %>
+  <%= f.text_field :subscribed %>
+
+  <%= f.label :income %>
+  <%= f.number_field :income %>
+
+  <%= f.submit "submit"%>
+<% end %>
